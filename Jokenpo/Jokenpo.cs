@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Jokenpo
 {
-    public partial class Form1 : Form
+    public partial class Jokenpo : Form
     {
-        public Form1()
+        public Jokenpo()
         {
             InitializeComponent();
         }
