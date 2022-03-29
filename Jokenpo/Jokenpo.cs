@@ -39,7 +39,7 @@ namespace Jokenpo
                         pBJogador.Image = Properties.Resources.paper;
                         break;
                     case "Scissor":
-                        PlayerChoice = Choices.Paper;
+                        PlayerChoice = Choices.Scissor;
                         pBJogador.Image = Properties.Resources.scissors;
                         break;
                 }
@@ -94,7 +94,7 @@ namespace Jokenpo
                 case "Scissor":
                     MessageBox.Show("Você ganhou!");
                     PlayerScore++;
-                    lblPlayer.Text = "P1: " + lblPlayer.ToString();
+                    lblPlayer.Text = "P1: " + PlayerScore.ToString();
                     break;
             }
             CanPlay = true;
@@ -116,7 +116,7 @@ namespace Jokenpo
                 case "Scissor":
                     MessageBox.Show("Você perdeu!");
                     CPUScore++;
-                    lblCPU.Text = "CPU: " + lblCPU.ToString();
+                    lblCPU.Text = "CPU: " + CPUScore.ToString();
                     break;
             }
             CanPlay = true;
@@ -131,7 +131,7 @@ namespace Jokenpo
                 case "Rock":
                     MessageBox.Show("Você perdeu!");
                     CPUScore++;
-                    lblCPU.Text = "CPU: " + lblCPU.ToString();
+                    lblCPU.Text = "CPU: " + CPUScore.ToString();
                     break;
                 case "Paper":
                     MessageBox.Show("Você ganhou!");
