@@ -18,7 +18,7 @@ namespace Jokenpo
         }
 
         int PlayerScore, CPUScore;
-        enum Choices { Rock, Paper, Scissor}
+        enum Choices { Rock, Paper, Scissor }
         Choices[] choices = { Choices.Rock, Choices.Paper, Choices.Scissor };
         Choices PlayerChoice, CPUChoice;
         bool CanPlay = true;
@@ -44,9 +44,49 @@ namespace Jokenpo
                         break;
                 }
                 CanPlay = false;
-
+                ChoiceIA();
             }
 
+        }
+        private void ChoiceIA()
+        {
+            Random rdm = new Random();
+            CPUChoice = choices[rdm.Next(0, choices.Length)];
+
+            switch (CPUChoice.ToString())
+            {
+                case "Rock":
+                    pBIA.Image = Properties.Resources.rock;
+                    break;
+                case "Paper":
+                    pBIA.Image = Properties.Resources.paper;
+                    break;
+                case "Scissor":
+                    pBIA.Image = Properties.Resources.scissors;
+                    break;
+            }
+
+            switch (PlayerChoice.ToString())
+            {
+                case "Rock":
+                    pBIA.Image = Properties.Resources.rock;
+                    break;
+                case "Paper":
+                    pBIA.Image = Properties.Resources.paper;
+                    break;
+                case "Scissor":
+                    pBIA.Image = Properties.Resources.scissors;
+                    break;
+            }
+        }
+        private void CheckRock()
+        {
+            switch (CPUChoice.ToString())
+            {
+                case "Rock":
+                    MessageBox.Show("Empate!");
+                    break;
+            }
         }
     }
 }
