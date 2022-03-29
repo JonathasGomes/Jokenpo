@@ -69,13 +69,13 @@ namespace Jokenpo
             switch (PlayerChoice.ToString())
             {
                 case "Rock":
-                    pBIA.Image = Properties.Resources.rock;
+                    CheckRock();
                     break;
                 case "Paper":
-                    pBIA.Image = Properties.Resources.paper;
+                    CheckPaper();
                     break;
                 case "Scissor":
-                    pBIA.Image = Properties.Resources.scissors;
+                    CheckScissor();
                     break;
             }
         }
@@ -86,7 +86,65 @@ namespace Jokenpo
                 case "Rock":
                     MessageBox.Show("Empate!");
                     break;
+                case "Paper":
+                    MessageBox.Show("Você perdeu!");
+                    CPUScore++;
+                    lblCPU.Text = "CPU: " + CPUScore.ToString();
+                    break;
+                case "Scissor":
+                    MessageBox.Show("Você ganhou!");
+                    PlayerScore++;
+                    lblPlayer.Text = "P1: " + lblPlayer.ToString();
+                    break;
             }
+            CanPlay = true;
+            pBIA.Image = null;
+            pBJogador.Image = null;
+        }
+        private void CheckPaper()
+        {
+            switch (CPUChoice.ToString())
+            {
+                case "Rock":
+                    MessageBox.Show("Você ganhou!");
+                    PlayerScore++;
+                    lblPlayer.Text = "P1  " + PlayerScore.ToString();
+                    break;
+                case "Paper":
+                    MessageBox.Show("Empate!");
+                    break;
+                case "Scissor":
+                    MessageBox.Show("Você perdeu!");
+                    CPUScore++;
+                    lblCPU.Text = "CPU: " + lblCPU.ToString();
+                    break;
+            }
+            CanPlay = true;
+            pBIA.Image = null;
+            pBJogador.Image = null;
+        }
+
+        private void CheckScissor()
+        {
+            switch (CPUChoice.ToString())
+            {
+                case "Rock":
+                    MessageBox.Show("Você perdeu!");
+                    CPUScore++;
+                    lblCPU.Text = "CPU: " + lblCPU.ToString();
+                    break;
+                case "Paper":
+                    MessageBox.Show("Você ganhou!");
+                    PlayerScore++;
+                    lblPlayer.Text = "P1  " + PlayerScore.ToString();
+                    break;
+                case "Scissor":
+                    MessageBox.Show("Empate!");
+                    break;
+            }
+            CanPlay = true;
+            pBIA.Image = null;
+            pBJogador.Image = null;
         }
     }
 }
