@@ -116,5 +116,32 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cpu_rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cpu-scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cpu_paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_rock.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

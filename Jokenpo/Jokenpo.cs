@@ -25,6 +25,8 @@ namespace Jokenpo
 
         private void Choices_Click(object sender, EventArgs e)
         {
+            //Este método está usando o evento click em 3 PictureBox
+            //Que no caso são as opções que o usuário pode escolher para jogar
             PictureBox pic = (PictureBox)sender;
             if (CanPlay)
             {
@@ -32,15 +34,15 @@ namespace Jokenpo
                 {
                     case "Rock":
                         PlayerChoice = Choices.Rock;
-                        pBJogador.Image = Properties.Resources.rock;
+                        pBJogador.Image = Properties.Resources.p_rock;
                         break;
                     case "Paper":
                         PlayerChoice = Choices.Paper;
-                        pBJogador.Image = Properties.Resources.paper;
+                        pBJogador.Image = Properties.Resources.p_paper;
                         break;
                     case "Scissor":
                         PlayerChoice = Choices.Scissor;
-                        pBJogador.Image = Properties.Resources.scissors;
+                        pBJogador.Image = Properties.Resources.p_scissors;
                         break;
                 }
                 CanPlay = false;
@@ -50,22 +52,24 @@ namespace Jokenpo
         }
         private void ChoiceIA()
         {
+            //Essas são as opções de escolha aleatória da IA
             Random rdm = new Random();
             CPUChoice = choices[rdm.Next(0, choices.Length)];
 
             switch (CPUChoice.ToString())
             {
                 case "Rock":
-                    pBIA.Image = Properties.Resources.rock;
+                    pBIA.Image = Properties.Resources.cpu_rock;
                     break;
                 case "Paper":
-                    pBIA.Image = Properties.Resources.paper;
+                    pBIA.Image = Properties.Resources.cpu_paper;
                     break;
                 case "Scissor":
-                    pBIA.Image = Properties.Resources.scissors;
+                    pBIA.Image = Properties.Resources.cpu_scissors;
                     break;
             }
-
+            // O switch separa 1 das 3 opções feita pelo jogador e chama o método
+            // Mostrando qual foi o resultado da partida
             switch (PlayerChoice.ToString())
             {
                 case "Rock":
@@ -79,6 +83,9 @@ namespace Jokenpo
                     break;
             }
         }
+
+        //Métodos CheckRock, CheckPaper e CheckScissor
+        //Servem para dar o resultado do jogo + aumentar os pontos na pontuação
         private void CheckRock()
         {
             switch (CPUChoice.ToString())
