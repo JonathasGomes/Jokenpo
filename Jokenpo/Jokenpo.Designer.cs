@@ -178,11 +178,11 @@ namespace Jokenpo
             // pBCPUScore
             // 
             this.pBCPUScore.BackColor = System.Drawing.Color.Transparent;
-            this.pBCPUScore.Location = new System.Drawing.Point(382, 0);
+            this.pBCPUScore.Location = new System.Drawing.Point(395, 18);
             this.pBCPUScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBCPUScore.Name = "pBCPUScore";
-            this.pBCPUScore.Size = new System.Drawing.Size(42, 43);
-            this.pBCPUScore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBCPUScore.Size = new System.Drawing.Size(20, 20);
+            this.pBCPUScore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pBCPUScore.TabIndex = 10;
             this.pBCPUScore.TabStop = false;
             // 

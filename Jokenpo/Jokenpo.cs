@@ -18,7 +18,7 @@ namespace Jokenpo
         }
 
         private Image[] ImagesScore = new Image[6];
-        int count = 0;
+        int countPlayer, countCPU = 0;
 
 
         int PlayerScore, CPUScore;
@@ -100,12 +100,13 @@ namespace Jokenpo
                 case "Paper":
                     MessageBox.Show("Você perdeu!");
                     CPUScore++;
+                    cpuCount();
                     lblCPU.Text = "CPU: " + CPUScore.ToString();
                     break;
                 case "Scissor":
                     MessageBox.Show("Você ganhou!");
                     PlayerScore++;
-                    ScoreImage();
+                    playerCount();
                     lblPlayer.Text = "P1: " + PlayerScore.ToString();
                     break;
             }
@@ -120,7 +121,7 @@ namespace Jokenpo
                 case "Rock":
                     MessageBox.Show("Você ganhou!");
                     PlayerScore++;
-                    ScoreImage();
+                    playerCount();
                     lblPlayer.Text = "P1  " + PlayerScore.ToString();
                     break;
                 case "Paper":
@@ -129,6 +130,7 @@ namespace Jokenpo
                 case "Scissor":
                     MessageBox.Show("Você perdeu!");
                     CPUScore++;
+                    cpuCount();
                     lblCPU.Text = "CPU: " + CPUScore.ToString();
                     break;
             }
@@ -144,12 +146,13 @@ namespace Jokenpo
                 case "Rock":
                     MessageBox.Show("Você perdeu!");
                     CPUScore++;
+                    cpuCount();
                     lblCPU.Text = "CPU: " + CPUScore.ToString();
                     break;
                 case "Paper":
                     MessageBox.Show("Você ganhou!");
                     PlayerScore++;
-                    ScoreImage();
+                    playerCount();
                     lblPlayer.Text = "P1  " + PlayerScore.ToString();
                     break;
                 case "Scissor":
@@ -161,23 +164,22 @@ namespace Jokenpo
             pBJogador.Image = null;
         }
 
-        private void ScoreImage()
+        private void playerCount()
         {
-            //ImagesScore[0] = Properties.Resources._0;
-            //ImagesScore[1] = Properties.Resources._1;
-            //ImagesScore[2] = Properties.Resources._2;
-            //ImagesScore[3] = Properties.Resources._3;
-            //ImagesScore[4] = Properties.Resources._4;
-            //ImagesScore[5] = Properties.Resources._5;
-            //ImagesScore[6] = Properties.Resources._6;
-
-            //imageListScore = Properties.Resources._0;
-
-            if (count < 7)
+            if (countPlayer < 7)
             {
-                count++;
+                countPlayer++;
             }
-            pBplayerScore.Image = imageListScore.Images[count]; 
+            pBplayerScore.Image = imageListScore.Images[countPlayer]; 
+        }
+
+        private void cpuCount()
+        {
+            if (countCPU < 6)
+            {
+                countCPU++;
+            }
+            pBCPUScore.Image = imageListScore.Images[countCPU];
         }
     }
 }
