@@ -96,15 +96,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\paper.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\scissors.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rock.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
@@ -160,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

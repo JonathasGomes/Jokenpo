@@ -17,6 +17,10 @@ namespace Jokenpo
             InitializeComponent();
         }
 
+        private Image[] ImagesScore = new Image[6];
+        int count = 0;
+
+
         int PlayerScore, CPUScore;
         enum Choices { Rock, Paper, Scissor }
         Choices[] choices = { Choices.Rock, Choices.Paper, Choices.Scissor };
@@ -101,6 +105,7 @@ namespace Jokenpo
                 case "Scissor":
                     MessageBox.Show("Você ganhou!");
                     PlayerScore++;
+                    ScoreImage();
                     lblPlayer.Text = "P1: " + PlayerScore.ToString();
                     break;
             }
@@ -115,6 +120,7 @@ namespace Jokenpo
                 case "Rock":
                     MessageBox.Show("Você ganhou!");
                     PlayerScore++;
+                    ScoreImage();
                     lblPlayer.Text = "P1  " + PlayerScore.ToString();
                     break;
                 case "Paper":
@@ -143,6 +149,7 @@ namespace Jokenpo
                 case "Paper":
                     MessageBox.Show("Você ganhou!");
                     PlayerScore++;
+                    ScoreImage();
                     lblPlayer.Text = "P1  " + PlayerScore.ToString();
                     break;
                 case "Scissor":
@@ -152,6 +159,25 @@ namespace Jokenpo
             CanPlay = true;
             pBIA.Image = null;
             pBJogador.Image = null;
+        }
+
+        private void ScoreImage()
+        {
+            //ImagesScore[0] = Properties.Resources._0;
+            //ImagesScore[1] = Properties.Resources._1;
+            //ImagesScore[2] = Properties.Resources._2;
+            //ImagesScore[3] = Properties.Resources._3;
+            //ImagesScore[4] = Properties.Resources._4;
+            //ImagesScore[5] = Properties.Resources._5;
+            //ImagesScore[6] = Properties.Resources._6;
+
+            //imageListScore = Properties.Resources._0;
+
+            if (count < 7)
+            {
+                count++;
+            }
+            pBplayerScore.Image = imageListScore.Images[count]; 
         }
     }
 }

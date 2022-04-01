@@ -29,6 +29,8 @@ namespace Jokenpo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jokenpo));
             this.lblCPU = new System.Windows.Forms.Label();
             this.lblPlayer = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -37,12 +39,17 @@ namespace Jokenpo
             this.Rock = new System.Windows.Forms.PictureBox();
             this.pBIA = new System.Windows.Forms.PictureBox();
             this.pBJogador = new System.Windows.Forms.PictureBox();
+            this.imageListScore = new System.Windows.Forms.ImageList(this.components);
+            this.pBplayerScore = new System.Windows.Forms.PictureBox();
+            this.pBCPUScore = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Scissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Paper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBJogador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBplayerScore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBCPUScore)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCPU
@@ -145,12 +152,48 @@ namespace Jokenpo
             this.pBJogador.TabIndex = 2;
             this.pBJogador.TabStop = false;
             // 
+            // imageListScore
+            // 
+            this.imageListScore.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListScore.ImageStream")));
+            this.imageListScore.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListScore.Images.SetKeyName(0, "0.png");
+            this.imageListScore.Images.SetKeyName(1, "1.png");
+            this.imageListScore.Images.SetKeyName(2, "2.png");
+            this.imageListScore.Images.SetKeyName(3, "3.png");
+            this.imageListScore.Images.SetKeyName(4, "4.png");
+            this.imageListScore.Images.SetKeyName(5, "5.png");
+            this.imageListScore.Images.SetKeyName(6, "6.png");
+            // 
+            // pBplayerScore
+            // 
+            this.pBplayerScore.BackColor = System.Drawing.Color.Transparent;
+            this.pBplayerScore.Location = new System.Drawing.Point(132, 299);
+            this.pBplayerScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pBplayerScore.Name = "pBplayerScore";
+            this.pBplayerScore.Size = new System.Drawing.Size(20, 20);
+            this.pBplayerScore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pBplayerScore.TabIndex = 9;
+            this.pBplayerScore.TabStop = false;
+            // 
+            // pBCPUScore
+            // 
+            this.pBCPUScore.BackColor = System.Drawing.Color.Transparent;
+            this.pBCPUScore.Location = new System.Drawing.Point(382, 0);
+            this.pBCPUScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pBCPUScore.Name = "pBCPUScore";
+            this.pBCPUScore.Size = new System.Drawing.Size(42, 43);
+            this.pBCPUScore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBCPUScore.TabIndex = 10;
+            this.pBCPUScore.TabStop = false;
+            // 
             // Jokenpo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(436, 512);
+            this.Controls.Add(this.pBCPUScore);
+            this.Controls.Add(this.pBplayerScore);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblPlayer);
             this.Controls.Add(this.lblCPU);
@@ -167,6 +210,8 @@ namespace Jokenpo
             ((System.ComponentModel.ISupportInitialize)(this.Rock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBIA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBJogador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBplayerScore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBCPUScore)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,6 +226,9 @@ namespace Jokenpo
         private System.Windows.Forms.Label lblCPU;
         private System.Windows.Forms.Label lblPlayer;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ImageList imageListScore;
+        private System.Windows.Forms.PictureBox pBplayerScore;
+        private System.Windows.Forms.PictureBox pBCPUScore;
     }
 }
 
