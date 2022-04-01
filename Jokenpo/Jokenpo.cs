@@ -166,18 +166,32 @@ namespace Jokenpo
 
         private void playerCount()
         {
-            if (countPlayer < 7)
+            if (countPlayer < 5)
             {
                 countPlayer++;
             }
-            pBplayerScore.Image = imageListScore.Images[countPlayer]; 
+            if(countPlayer == 5)
+            {
+                countPlayer = 0;
+                countCPU = 0;
+
+                pBCPUScore.Image = imageListScore.Images[countCPU];
+            }
+            pBplayerScore.Image = imageListScore.Images[countPlayer];
         }
 
         private void cpuCount()
         {
-            if (countCPU < 6)
+            if (countCPU < 5)
             {
                 countCPU++;
+            }
+            if (countCPU == 5)
+            {
+                countCPU = 0;
+                countPlayer = 0;
+
+                pBCPUScore.Image = imageListScore.Images[countPlayer];
             }
             pBCPUScore.Image = imageListScore.Images[countCPU];
         }

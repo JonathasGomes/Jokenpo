@@ -56,7 +56,7 @@ namespace Jokenpo
             // 
             this.lblCPU.AutoSize = true;
             this.lblCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPU.Location = new System.Drawing.Point(330, 18);
+            this.lblCPU.Location = new System.Drawing.Point(303, 18);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(59, 25);
             this.lblCPU.TabIndex = 6;
@@ -167,10 +167,11 @@ namespace Jokenpo
             // pBplayerScore
             // 
             this.pBplayerScore.BackColor = System.Drawing.Color.Transparent;
+            this.pBplayerScore.Image = global::Jokenpo.Properties.Resources._0;
             this.pBplayerScore.Location = new System.Drawing.Point(132, 299);
             this.pBplayerScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBplayerScore.Name = "pBplayerScore";
-            this.pBplayerScore.Size = new System.Drawing.Size(20, 20);
+            this.pBplayerScore.Size = new System.Drawing.Size(22, 26);
             this.pBplayerScore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pBplayerScore.TabIndex = 9;
             this.pBplayerScore.TabStop = false;
@@ -178,10 +179,11 @@ namespace Jokenpo
             // pBCPUScore
             // 
             this.pBCPUScore.BackColor = System.Drawing.Color.Transparent;
+            this.pBCPUScore.Image = global::Jokenpo.Properties.Resources._0;
             this.pBCPUScore.Location = new System.Drawing.Point(395, 18);
             this.pBCPUScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBCPUScore.Name = "pBCPUScore";
-            this.pBCPUScore.Size = new System.Drawing.Size(20, 20);
+            this.pBCPUScore.Size = new System.Drawing.Size(22, 26);
             this.pBCPUScore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pBCPUScore.TabIndex = 10;
             this.pBCPUScore.TabStop = false;
