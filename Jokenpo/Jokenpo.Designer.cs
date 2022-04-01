@@ -49,7 +49,7 @@ namespace Jokenpo
             // 
             this.lblCPU.AutoSize = true;
             this.lblCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPU.Location = new System.Drawing.Point(29, 32);
+            this.lblCPU.Location = new System.Drawing.Point(330, 18);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(59, 25);
             this.lblCPU.TabIndex = 6;
@@ -59,7 +59,7 @@ namespace Jokenpo
             // 
             this.lblPlayer.AutoSize = true;
             this.lblPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer.Location = new System.Drawing.Point(12, 251);
+            this.lblPlayer.Location = new System.Drawing.Point(12, 298);
             this.lblPlayer.Name = "lblPlayer";
             this.lblPlayer.Size = new System.Drawing.Size(97, 31);
             this.lblPlayer.TabIndex = 7;
