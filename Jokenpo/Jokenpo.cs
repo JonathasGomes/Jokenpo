@@ -154,11 +154,11 @@ namespace Jokenpo
 
         private void playerCount()
         {
-            if (countPlayer < 5)
+            if (countPlayer < 6)
             {
                 countPlayer++;
             }
-            if(countPlayer == 5)
+            if(countPlayer == 6)
             {
                 countPlayer = 0;
                 countCPU = 0;
@@ -170,11 +170,11 @@ namespace Jokenpo
 
         private void cpuCount()
         {
-            if (countCPU < 5)
+            if (countCPU < 6)
             {
                 countCPU++;
             }
-            if (countCPU == 5)
+            if (countCPU == 6)
             {
                 countCPU = 0;
                 countPlayer = 0;
