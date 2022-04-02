@@ -99,15 +99,11 @@ namespace Jokenpo
                     break;
                 case "Paper":
                     MessageBox.Show("Você perdeu!");
-                    CPUScore++;
                     cpuCount();
-                    lblCPU.Text = "CPU: " + CPUScore.ToString();
                     break;
                 case "Scissor":
                     MessageBox.Show("Você ganhou!");
-                    PlayerScore++;
                     playerCount();
-                    lblPlayer.Text = "P1: " + PlayerScore.ToString();
                     break;
             }
             CanPlay = true;
@@ -120,18 +116,14 @@ namespace Jokenpo
             {
                 case "Rock":
                     MessageBox.Show("Você ganhou!");
-                    PlayerScore++;
                     playerCount();
-                    lblPlayer.Text = "P1  " + PlayerScore.ToString();
                     break;
                 case "Paper":
                     MessageBox.Show("Empate!");
                     break;
                 case "Scissor":
                     MessageBox.Show("Você perdeu!");
-                    CPUScore++;
                     cpuCount();
-                    lblCPU.Text = "CPU: " + CPUScore.ToString();
                     break;
             }
             CanPlay = true;
@@ -145,15 +137,11 @@ namespace Jokenpo
             {
                 case "Rock":
                     MessageBox.Show("Você perdeu!");
-                    CPUScore++;
                     cpuCount();
-                    lblCPU.Text = "CPU: " + CPUScore.ToString();
                     break;
                 case "Paper":
                     MessageBox.Show("Você ganhou!");
-                    PlayerScore++;
                     playerCount();
-                    lblPlayer.Text = "P1  " + PlayerScore.ToString();
                     break;
                 case "Scissor":
                     MessageBox.Show("Empate!");
