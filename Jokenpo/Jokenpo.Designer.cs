@@ -44,6 +44,8 @@ namespace Jokenpo
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.lblPlayer = new System.Windows.Forms.PictureBox();
             this.lblCPU = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imageListResult = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Scissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Paper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rock)).BeginInit();
@@ -56,6 +58,7 @@ namespace Jokenpo
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCPU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Scissors
@@ -224,6 +227,21 @@ namespace Jokenpo
             this.lblCPU.TabIndex = 16;
             this.lblCPU.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(294, 291);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // imageListResult
+            // 
+            this.imageListResult.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageListResult.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageListResult.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // Jokenpo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +249,7 @@ namespace Jokenpo
             this.BackColor = System.Drawing.Color.Bisque;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(436, 512);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.pBCPUScore);
             this.Controls.Add(this.lblPlayer);
@@ -257,6 +276,7 @@ namespace Jokenpo
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCPU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,6 +296,8 @@ namespace Jokenpo
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox lblPlayer;
         private System.Windows.Forms.PictureBox lblCPU;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ImageList imageListResult;
     }
 }
 

@@ -95,40 +95,34 @@ namespace Jokenpo
             switch (CPUChoice.ToString())
             {
                 case "Rock":
-                    MessageBox.Show("Empate!");
+                    Draw();
                     break;
                 case "Paper":
-                    MessageBox.Show("Você perdeu!");
                     cpuCount();
                     break;
                 case "Scissor":
-                    MessageBox.Show("Você ganhou!");
                     playerCount();
                     break;
             }
             CanPlay = true;
-            pBIA.Image = null;
-            pBJogador.Image = null;
         }
         private void CheckPaper()
         {
             switch (CPUChoice.ToString())
             {
                 case "Rock":
-                    MessageBox.Show("Você ganhou!");
                     playerCount();
                     break;
                 case "Paper":
-                    MessageBox.Show("Empate!");
+                    Draw();
                     break;
                 case "Scissor":
-                    MessageBox.Show("Você perdeu!");
                     cpuCount();
                     break;
             }
             CanPlay = true;
-            pBIA.Image = null;
-            pBJogador.Image = null;
+            //pBIA.Image = null;
+            //pBJogador.Image = null;
         }
 
         private void CheckScissor()
@@ -136,20 +130,18 @@ namespace Jokenpo
             switch (CPUChoice.ToString())
             {
                 case "Rock":
-                    MessageBox.Show("Você perdeu!");
                     cpuCount();
                     break;
                 case "Paper":
-                    MessageBox.Show("Você ganhou!");
                     playerCount();
                     break;
                 case "Scissor":
-                    MessageBox.Show("Empate!");
+                    Draw();
                     break;
             }
             CanPlay = true;
-            pBIA.Image = null;
-            pBJogador.Image = null;
+            //pBIA.Image = null;
+            //pBJogador.Image = null;
         }
 
         private void playerCount()
@@ -157,6 +149,7 @@ namespace Jokenpo
             if (countPlayer < 6)
             {
                 countPlayer++;
+                pBplayerScore.Image = imageListScore.Images[countPlayer];
             }
             if(countPlayer == 6)
             {
@@ -165,7 +158,7 @@ namespace Jokenpo
 
                 pBCPUScore.Image = imageListScore.Images[countCPU];
             }
-            pBplayerScore.Image = imageListScore.Images[countPlayer];
+            pictureBox1.Image = Properties.Resources.win_fonte_jokenpo_;
         }
 
         private void cpuCount()
@@ -173,6 +166,7 @@ namespace Jokenpo
             if (countCPU < 6)
             {
                 countCPU++;
+                pictureBox1.Image = Properties.Resources.lose_fonte_jokenpo_2;
             }
             if (countCPU == 6)
             {
@@ -182,6 +176,7 @@ namespace Jokenpo
                 pBplayerScore.Image = imageListScore.Images[countPlayer];
             }
             pBCPUScore.Image = imageListScore.Images[countCPU];
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -192,6 +187,11 @@ namespace Jokenpo
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void Draw()
+        {
+            pictureBox1.Image = Properties.Resources.draw_fonte_jokenpo;
         }
     }
 }

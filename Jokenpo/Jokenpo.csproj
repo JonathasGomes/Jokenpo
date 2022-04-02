@@ -155,5 +155,14 @@
   <ItemGroup>
     <None Include="Resources\0.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose_fonte_jokenpo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win_fonte_jokenpo_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\draw_fonte_jokenpo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
