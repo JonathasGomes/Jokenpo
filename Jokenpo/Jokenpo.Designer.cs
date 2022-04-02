@@ -42,6 +42,8 @@ namespace Jokenpo
             this.pBplayerScore = new System.Windows.Forms.PictureBox();
             this.pBCPUScore = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.btnMinimize = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Scissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Paper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rock)).BeginInit();
@@ -50,6 +52,8 @@ namespace Jokenpo
             ((System.ComponentModel.ISupportInitialize)(this.pBplayerScore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBCPUScore)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCPU
@@ -57,7 +61,7 @@ namespace Jokenpo
             this.lblCPU.AutoSize = true;
             this.lblCPU.BackColor = System.Drawing.Color.Transparent;
             this.lblCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPU.Location = new System.Drawing.Point(303, 37);
+            this.lblCPU.Location = new System.Drawing.Point(302, 47);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(59, 25);
             this.lblCPU.TabIndex = 6;
@@ -79,7 +83,7 @@ namespace Jokenpo
             this.Scissors.BackColor = System.Drawing.Color.Transparent;
             this.Scissors.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Scissors.Image = global::Jokenpo.Properties.Resources.button_scissors;
-            this.Scissors.Location = new System.Drawing.Point(236, 27);
+            this.Scissors.Location = new System.Drawing.Point(264, 18);
             this.Scissors.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Scissors.Name = "Scissors";
             this.Scissors.Size = new System.Drawing.Size(64, 64);
@@ -94,7 +98,7 @@ namespace Jokenpo
             this.Paper.BackColor = System.Drawing.Color.Transparent;
             this.Paper.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Paper.Image = global::Jokenpo.Properties.Resources.button_paper;
-            this.Paper.Location = new System.Drawing.Point(136, 27);
+            this.Paper.Location = new System.Drawing.Point(154, 18);
             this.Paper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Paper.Name = "Paper";
             this.Paper.Size = new System.Drawing.Size(64, 64);
@@ -109,7 +113,7 @@ namespace Jokenpo
             this.Rock.BackColor = System.Drawing.Color.Transparent;
             this.Rock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Rock.Image = global::Jokenpo.Properties.Resources.button_rock;
-            this.Rock.Location = new System.Drawing.Point(33, 27);
+            this.Rock.Location = new System.Drawing.Point(44, 18);
             this.Rock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Rock.Name = "Rock";
             this.Rock.Size = new System.Drawing.Size(64, 64);
@@ -168,7 +172,7 @@ namespace Jokenpo
             // 
             this.pBCPUScore.BackColor = System.Drawing.Color.Transparent;
             this.pBCPUScore.Image = global::Jokenpo.Properties.Resources._0;
-            this.pBCPUScore.Location = new System.Drawing.Point(368, 36);
+            this.pBCPUScore.Location = new System.Drawing.Point(367, 46);
             this.pBCPUScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBCPUScore.Name = "pBCPUScore";
             this.pBCPUScore.Size = new System.Drawing.Size(22, 26);
@@ -179,13 +183,42 @@ namespace Jokenpo
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Moccasin;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.Rock);
             this.panel1.Controls.Add(this.Scissors);
             this.panel1.Controls.Add(this.Paper);
             this.panel1.Location = new System.Drawing.Point(43, 361);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(335, 120);
+            this.panel1.Size = new System.Drawing.Size(372, 103);
             this.panel1.TabIndex = 11;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(400, 13);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(22, 22);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 12;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Location = new System.Drawing.Point(372, 13);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(22, 22);
+            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMinimize.TabIndex = 13;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // Jokenpo
             // 
@@ -194,6 +227,8 @@ namespace Jokenpo
             this.BackColor = System.Drawing.Color.Bisque;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(436, 512);
+            this.Controls.Add(this.btnMinimize);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pBCPUScore);
             this.Controls.Add(this.pBplayerScore);
@@ -214,6 +249,8 @@ namespace Jokenpo
             ((System.ComponentModel.ISupportInitialize)(this.pBplayerScore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBCPUScore)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,6 +268,8 @@ namespace Jokenpo
         private System.Windows.Forms.PictureBox pBplayerScore;
         private System.Windows.Forms.PictureBox pBCPUScore;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox btnClose;
+        private System.Windows.Forms.PictureBox btnMinimize;
     }
 }
 
