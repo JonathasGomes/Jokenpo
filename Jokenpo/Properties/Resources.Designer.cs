@@ -193,6 +193,26 @@ namespace Jokenpo.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap draw_fonte_jokenpo {
+            get {
+                object obj = ResourceManager.GetObject("draw_fonte_jokenpo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lose_fonte_jokenpo_2 {
+            get {
+                object obj = ResourceManager.GetObject("lose_fonte_jokenpo_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap p_paper {
             get {
                 object obj = ResourceManager.GetObject("p_paper", resourceCulture);
@@ -216,6 +236,16 @@ namespace Jokenpo.Properties {
         internal static System.Drawing.Bitmap p_scissors {
             get {
                 object obj = ResourceManager.GetObject("p_scissors", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap win_fonte_jokenpo_ {
+            get {
+                object obj = ResourceManager.GetObject("win_fonte_jokenpo_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

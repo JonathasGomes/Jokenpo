@@ -31,8 +31,6 @@ namespace Jokenpo
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jokenpo));
-            this.lblCPU = new System.Windows.Forms.Label();
-            this.lblPlayer = new System.Windows.Forms.Label();
             this.Scissors = new System.Windows.Forms.PictureBox();
             this.Paper = new System.Windows.Forms.PictureBox();
             this.Rock = new System.Windows.Forms.PictureBox();
@@ -44,6 +42,8 @@ namespace Jokenpo
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.lblPlayer = new System.Windows.Forms.PictureBox();
+            this.lblCPU = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Scissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Paper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rock)).BeginInit();
@@ -54,29 +54,9 @@ namespace Jokenpo
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblPlayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblCPU)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblCPU
-            // 
-            this.lblCPU.AutoSize = true;
-            this.lblCPU.BackColor = System.Drawing.Color.Transparent;
-            this.lblCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPU.Location = new System.Drawing.Point(302, 47);
-            this.lblCPU.Name = "lblCPU";
-            this.lblCPU.Size = new System.Drawing.Size(59, 25);
-            this.lblCPU.TabIndex = 6;
-            this.lblCPU.Text = "CPU";
-            // 
-            // lblPlayer
-            // 
-            this.lblPlayer.AutoSize = true;
-            this.lblPlayer.BackColor = System.Drawing.Color.Transparent;
-            this.lblPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer.Location = new System.Drawing.Point(12, 303);
-            this.lblPlayer.Name = "lblPlayer";
-            this.lblPlayer.Size = new System.Drawing.Size(97, 31);
-            this.lblPlayer.TabIndex = 7;
-            this.lblPlayer.Text = "Player";
             // 
             // Scissors
             // 
@@ -126,7 +106,7 @@ namespace Jokenpo
             // pBIA
             // 
             this.pBIA.BackColor = System.Drawing.Color.Transparent;
-            this.pBIA.Location = new System.Drawing.Point(168, 85);
+            this.pBIA.Location = new System.Drawing.Point(168, 82);
             this.pBIA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBIA.Name = "pBIA";
             this.pBIA.Size = new System.Drawing.Size(90, 90);
@@ -137,7 +117,7 @@ namespace Jokenpo
             // pBJogador
             // 
             this.pBJogador.BackColor = System.Drawing.Color.Transparent;
-            this.pBJogador.Location = new System.Drawing.Point(168, 185);
+            this.pBJogador.Location = new System.Drawing.Point(168, 182);
             this.pBJogador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBJogador.Name = "pBJogador";
             this.pBJogador.Size = new System.Drawing.Size(90, 90);
@@ -161,7 +141,7 @@ namespace Jokenpo
             // 
             this.pBplayerScore.BackColor = System.Drawing.Color.Transparent;
             this.pBplayerScore.Image = global::Jokenpo.Properties.Resources._0;
-            this.pBplayerScore.Location = new System.Drawing.Point(115, 308);
+            this.pBplayerScore.Location = new System.Drawing.Point(168, 304);
             this.pBplayerScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBplayerScore.Name = "pBplayerScore";
             this.pBplayerScore.Size = new System.Drawing.Size(26, 26);
@@ -172,7 +152,7 @@ namespace Jokenpo
             // 
             this.pBCPUScore.BackColor = System.Drawing.Color.Transparent;
             this.pBCPUScore.Image = global::Jokenpo.Properties.Resources._0;
-            this.pBCPUScore.Location = new System.Drawing.Point(367, 46);
+            this.pBCPUScore.Location = new System.Drawing.Point(345, 48);
             this.pBCPUScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBCPUScore.Name = "pBCPUScore";
             this.pBCPUScore.Size = new System.Drawing.Size(22, 26);
@@ -187,7 +167,7 @@ namespace Jokenpo
             this.panel1.Controls.Add(this.Rock);
             this.panel1.Controls.Add(this.Scissors);
             this.panel1.Controls.Add(this.Paper);
-            this.panel1.Location = new System.Drawing.Point(43, 361);
+            this.panel1.Location = new System.Drawing.Point(32, 361);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(372, 103);
             this.panel1.TabIndex = 11;
@@ -220,6 +200,30 @@ namespace Jokenpo
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
+            // lblPlayer
+            // 
+            this.lblPlayer.BackColor = System.Drawing.Color.Transparent;
+            this.lblPlayer.Image = ((System.Drawing.Image)(resources.GetObject("lblPlayer.Image")));
+            this.lblPlayer.Location = new System.Drawing.Point(32, 301);
+            this.lblPlayer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblPlayer.Name = "lblPlayer";
+            this.lblPlayer.Size = new System.Drawing.Size(130, 29);
+            this.lblPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.lblPlayer.TabIndex = 15;
+            this.lblPlayer.TabStop = false;
+            // 
+            // lblCPU
+            // 
+            this.lblCPU.BackColor = System.Drawing.Color.Transparent;
+            this.lblCPU.Image = ((System.Drawing.Image)(resources.GetObject("lblCPU.Image")));
+            this.lblCPU.Location = new System.Drawing.Point(263, 45);
+            this.lblCPU.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblCPU.Name = "lblCPU";
+            this.lblCPU.Size = new System.Drawing.Size(76, 29);
+            this.lblCPU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.lblCPU.TabIndex = 16;
+            this.lblCPU.TabStop = false;
+            // 
             // Jokenpo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,13 +231,13 @@ namespace Jokenpo
             this.BackColor = System.Drawing.Color.Bisque;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(436, 512);
+            this.Controls.Add(this.lblCPU);
+            this.Controls.Add(this.pBCPUScore);
+            this.Controls.Add(this.lblPlayer);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pBCPUScore);
             this.Controls.Add(this.pBplayerScore);
-            this.Controls.Add(this.lblPlayer);
-            this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.pBIA);
             this.Controls.Add(this.pBJogador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -251,6 +255,8 @@ namespace Jokenpo
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblPlayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblCPU)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,14 +268,14 @@ namespace Jokenpo
         private System.Windows.Forms.PictureBox pBIA;
         private System.Windows.Forms.PictureBox Scissors;
         private System.Windows.Forms.PictureBox Rock;
-        private System.Windows.Forms.Label lblCPU;
-        private System.Windows.Forms.Label lblPlayer;
         private System.Windows.Forms.ImageList imageListScore;
         private System.Windows.Forms.PictureBox pBplayerScore;
         private System.Windows.Forms.PictureBox pBCPUScore;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.PictureBox btnMinimize;
+        private System.Windows.Forms.PictureBox lblPlayer;
+        private System.Windows.Forms.PictureBox lblCPU;
     }
 }
 
