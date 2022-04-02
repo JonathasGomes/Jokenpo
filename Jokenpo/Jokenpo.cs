@@ -179,7 +179,7 @@ namespace Jokenpo
                 countCPU = 0;
                 countPlayer = 0;
 
-                pBCPUScore.Image = imageListScore.Images[countPlayer];
+                pBplayerScore.Image = imageListScore.Images[countPlayer];
             }
             pBCPUScore.Image = imageListScore.Images[countCPU];
         }
