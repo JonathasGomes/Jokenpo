@@ -151,6 +151,9 @@ namespace Jokenpo
             }
             if(countPlayer == 6)
             {
+                Victory victory = new Victory();
+                victory.ShowDialog();
+
                 countPlayer = 0;
                 countCPU = 0;
 
@@ -173,6 +176,9 @@ namespace Jokenpo
             }
             if (countCPU == 6)
             {
+                GameOver gameover = new GameOver();
+                gameover.ShowDialog();
+
                 countCPU = 0;
                 countPlayer = 0;
 
