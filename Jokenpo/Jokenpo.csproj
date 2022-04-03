@@ -167,5 +167,11 @@
   <ItemGroup>
     <None Include="Resources\winsound.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losesound.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

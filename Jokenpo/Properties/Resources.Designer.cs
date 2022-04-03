@@ -201,12 +201,30 @@ namespace Jokenpo.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream drawsound {
+            get {
+                return ResourceManager.GetStream("drawsound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap lose_fonte_jokenpo_2 {
             get {
                 object obj = ResourceManager.GetObject("lose_fonte_jokenpo_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream losesound {
+            get {
+                return ResourceManager.GetStream("losesound", resourceCulture);
             }
         }
         

@@ -20,8 +20,6 @@ namespace Jokenpo
 
         int countPlayer, countCPU = 0;
 
-        SoundPlayer sound = new SoundPlayer(Properties.Resources.winsound);
-
         enum Choices { Rock, Paper, Scissor }
         Choices[] choices = { Choices.Rock, Choices.Paper, Choices.Scissor };
         Choices PlayerChoice, CPUChoice;
@@ -146,6 +144,9 @@ namespace Jokenpo
             {
                 countPlayer++;
                 pBplayerScore.Image = imageListScore.Images[countPlayer];
+
+                //Som da vitória do round
+                SoundPlayer sound = new SoundPlayer(Properties.Resources.winsound);
                 sound.Play();
             }
             if(countPlayer == 6)
@@ -164,6 +165,10 @@ namespace Jokenpo
             {
                 countCPU++;
                 pbResult.Image = Properties.Resources.lose_fonte_jokenpo_2;
+
+                //Som da derrota do round
+                SoundPlayer sound = new SoundPlayer(Properties.Resources.losesound);
+                sound.Play();
             }
             if (countCPU == 6)
             {
@@ -189,6 +194,10 @@ namespace Jokenpo
         private void Draw()
         {
             pbResult.Image = Properties.Resources.draw_fonte_jokenpo;
+
+            //Som do empate do round
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.drawsound);
+            sound.Play();
         }
     }
 }
