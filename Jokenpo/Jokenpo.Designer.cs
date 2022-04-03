@@ -44,7 +44,7 @@ namespace Jokenpo
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.lblPlayer = new System.Windows.Forms.PictureBox();
             this.lblCPU = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbResult = new System.Windows.Forms.PictureBox();
             this.imageListResult = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Scissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Paper)).BeginInit();
@@ -58,7 +58,7 @@ namespace Jokenpo
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCPU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResult)).BeginInit();
             this.SuspendLayout();
             // 
             // Scissors
@@ -109,7 +109,7 @@ namespace Jokenpo
             // pBIA
             // 
             this.pBIA.BackColor = System.Drawing.Color.Transparent;
-            this.pBIA.Location = new System.Drawing.Point(168, 82);
+            this.pBIA.Location = new System.Drawing.Point(183, 88);
             this.pBIA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBIA.Name = "pBIA";
             this.pBIA.Size = new System.Drawing.Size(90, 90);
@@ -120,7 +120,7 @@ namespace Jokenpo
             // pBJogador
             // 
             this.pBJogador.BackColor = System.Drawing.Color.Transparent;
-            this.pBJogador.Location = new System.Drawing.Point(168, 182);
+            this.pBJogador.Location = new System.Drawing.Point(183, 246);
             this.pBJogador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBJogador.Name = "pBJogador";
             this.pBJogador.Size = new System.Drawing.Size(90, 90);
@@ -144,7 +144,7 @@ namespace Jokenpo
             // 
             this.pBplayerScore.BackColor = System.Drawing.Color.Transparent;
             this.pBplayerScore.Image = global::Jokenpo.Properties.Resources._0;
-            this.pBplayerScore.Location = new System.Drawing.Point(168, 304);
+            this.pBplayerScore.Location = new System.Drawing.Point(170, 355);
             this.pBplayerScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBplayerScore.Name = "pBplayerScore";
             this.pBplayerScore.Size = new System.Drawing.Size(26, 26);
@@ -155,7 +155,7 @@ namespace Jokenpo
             // 
             this.pBCPUScore.BackColor = System.Drawing.Color.Transparent;
             this.pBCPUScore.Image = global::Jokenpo.Properties.Resources._0;
-            this.pBCPUScore.Location = new System.Drawing.Point(345, 48);
+            this.pBCPUScore.Location = new System.Drawing.Point(383, 54);
             this.pBCPUScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBCPUScore.Name = "pBCPUScore";
             this.pBCPUScore.Size = new System.Drawing.Size(22, 26);
@@ -170,7 +170,7 @@ namespace Jokenpo
             this.panel1.Controls.Add(this.Rock);
             this.panel1.Controls.Add(this.Scissors);
             this.panel1.Controls.Add(this.Paper);
-            this.panel1.Location = new System.Drawing.Point(32, 361);
+            this.panel1.Location = new System.Drawing.Point(29, 387);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(372, 103);
             this.panel1.TabIndex = 11;
@@ -207,7 +207,7 @@ namespace Jokenpo
             // 
             this.lblPlayer.BackColor = System.Drawing.Color.Transparent;
             this.lblPlayer.Image = ((System.Drawing.Image)(resources.GetObject("lblPlayer.Image")));
-            this.lblPlayer.Location = new System.Drawing.Point(32, 301);
+            this.lblPlayer.Location = new System.Drawing.Point(29, 352);
             this.lblPlayer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblPlayer.Name = "lblPlayer";
             this.lblPlayer.Size = new System.Drawing.Size(130, 29);
@@ -219,7 +219,7 @@ namespace Jokenpo
             // 
             this.lblCPU.BackColor = System.Drawing.Color.Transparent;
             this.lblCPU.Image = ((System.Drawing.Image)(resources.GetObject("lblCPU.Image")));
-            this.lblCPU.Location = new System.Drawing.Point(263, 45);
+            this.lblCPU.Location = new System.Drawing.Point(296, 54);
             this.lblCPU.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(76, 29);
@@ -227,14 +227,15 @@ namespace Jokenpo
             this.lblCPU.TabIndex = 16;
             this.lblCPU.TabStop = false;
             // 
-            // pictureBox1
+            // pbResult
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(294, 291);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.pbResult.BackColor = System.Drawing.Color.Transparent;
+            this.pbResult.Location = new System.Drawing.Point(183, 199);
+            this.pbResult.Name = "pbResult";
+            this.pbResult.Size = new System.Drawing.Size(100, 50);
+            this.pbResult.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbResult.TabIndex = 17;
+            this.pbResult.TabStop = false;
             // 
             // imageListResult
             // 
@@ -249,7 +250,7 @@ namespace Jokenpo
             this.BackColor = System.Drawing.Color.Bisque;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(436, 512);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbResult);
             this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.pBCPUScore);
             this.Controls.Add(this.lblPlayer);
@@ -276,7 +277,7 @@ namespace Jokenpo
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCPU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,7 +297,7 @@ namespace Jokenpo
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox lblPlayer;
         private System.Windows.Forms.PictureBox lblCPU;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbResult;
         private System.Windows.Forms.ImageList imageListResult;
     }
 }

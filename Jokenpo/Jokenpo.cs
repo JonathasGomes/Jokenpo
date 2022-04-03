@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,11 +18,10 @@ namespace Jokenpo
             InitializeComponent();
         }
 
-        private Image[] ImagesScore = new Image[6];
         int countPlayer, countCPU = 0;
 
+        SoundPlayer sound = new SoundPlayer();
 
-        int PlayerScore, CPUScore;
         enum Choices { Rock, Paper, Scissor }
         Choices[] choices = { Choices.Rock, Choices.Paper, Choices.Scissor };
         Choices PlayerChoice, CPUChoice;
@@ -120,9 +120,7 @@ namespace Jokenpo
                     cpuCount();
                     break;
             }
-            CanPlay = true;
-            //pBIA.Image = null;
-            //pBJogador.Image = null;
+            CanPlay = true;;
         }
 
         private void CheckScissor()
@@ -140,8 +138,6 @@ namespace Jokenpo
                     break;
             }
             CanPlay = true;
-            //pBIA.Image = null;
-            //pBJogador.Image = null;
         }
 
         private void playerCount()
@@ -150,6 +146,8 @@ namespace Jokenpo
             {
                 countPlayer++;
                 pBplayerScore.Image = imageListScore.Images[countPlayer];
+                sound.SoundLocation = "C:\\Users\\jonat\\Downloads\\winsound.wav";
+                sound.Play();
             }
             if(countPlayer == 6)
             {
@@ -158,7 +156,7 @@ namespace Jokenpo
 
                 pBCPUScore.Image = imageListScore.Images[countCPU];
             }
-            pictureBox1.Image = Properties.Resources.win_fonte_jokenpo_;
+            pbResult.Image = Properties.Resources.win_fonte_jokenpo_;
         }
 
         private void cpuCount()
@@ -166,7 +164,7 @@ namespace Jokenpo
             if (countCPU < 6)
             {
                 countCPU++;
-                pictureBox1.Image = Properties.Resources.lose_fonte_jokenpo_2;
+                pbResult.Image = Properties.Resources.lose_fonte_jokenpo_2;
             }
             if (countCPU == 6)
             {
@@ -191,7 +189,7 @@ namespace Jokenpo
 
         private void Draw()
         {
-            pictureBox1.Image = Properties.Resources.draw_fonte_jokenpo;
+            pbResult.Image = Properties.Resources.draw_fonte_jokenpo;
         }
     }
 }
