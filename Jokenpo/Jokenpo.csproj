@@ -164,5 +164,8 @@
   <ItemGroup>
     <None Include="Resources\draw_fonte_jokenpo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winsound.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

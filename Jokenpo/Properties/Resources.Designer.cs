@@ -249,5 +249,14 @@ namespace Jokenpo.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream winsound {
+            get {
+                return ResourceManager.GetStream("winsound", resourceCulture);
+            }
+        }
     }
 }

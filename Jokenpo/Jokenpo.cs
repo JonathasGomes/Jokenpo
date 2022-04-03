@@ -20,7 +20,7 @@ namespace Jokenpo
 
         int countPlayer, countCPU = 0;
 
-        SoundPlayer sound = new SoundPlayer();
+        SoundPlayer sound = new SoundPlayer(Properties.Resources.winsound);
 
         enum Choices { Rock, Paper, Scissor }
         Choices[] choices = { Choices.Rock, Choices.Paper, Choices.Scissor };
@@ -146,7 +146,6 @@ namespace Jokenpo
             {
                 countPlayer++;
                 pBplayerScore.Image = imageListScore.Images[countPlayer];
-                sound.SoundLocation = "C:\\Users\\jonat\\Downloads\\winsound.wav";
                 sound.Play();
             }
             if(countPlayer == 6)
