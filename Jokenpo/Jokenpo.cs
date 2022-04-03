@@ -143,7 +143,7 @@ namespace Jokenpo
             if (countPlayer < 6)
             {
                 countPlayer++;
-                pBplayerScore.Image = imageListScore.Images[countPlayer];
+                pbResult.Image = Properties.Resources.win_fonte_jokenpo_;
 
                 //Som da vitória do round
                 SoundPlayer sound = new SoundPlayer(Properties.Resources.winsound);
@@ -156,7 +156,8 @@ namespace Jokenpo
 
                 pBCPUScore.Image = imageListScore.Images[countCPU];
             }
-            pbResult.Image = Properties.Resources.win_fonte_jokenpo_;
+
+            pBplayerScore.Image = imageListScore.Images[countPlayer];
         }
 
         private void cpuCount()

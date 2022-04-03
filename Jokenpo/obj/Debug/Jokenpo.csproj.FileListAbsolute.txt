@@ -8,3 +8,5 @@ C:\Users\jonat\Documents\GitHub\Jokenpo\Jokenpo\obj\Debug\Jokenpo.csproj.Generat
 C:\Users\jonat\Documents\GitHub\Jokenpo\Jokenpo\obj\Debug\Jokenpo.csproj.CoreCompileInputs.cache
 C:\Users\jonat\Documents\GitHub\Jokenpo\Jokenpo\obj\Debug\Jokenpo.exe
 C:\Users\jonat\Documents\GitHub\Jokenpo\Jokenpo\obj\Debug\Jokenpo.pdb
+C:\Users\jonat\Documents\GitHub\Jokenpo\Jokenpo\obj\Debug\Jokenpo.GameOver.resources
+C:\Users\jonat\Documents\GitHub\Jokenpo\Jokenpo\obj\Debug\Jokenpo.Victory.resources
