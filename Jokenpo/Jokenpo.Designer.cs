@@ -155,7 +155,7 @@ namespace Jokenpo
             // 
             this.pBCPUScore.BackColor = System.Drawing.Color.Transparent;
             this.pBCPUScore.Image = global::Jokenpo.Properties.Resources._0;
-            this.pBCPUScore.Location = new System.Drawing.Point(383, 57);
+            this.pBCPUScore.Location = new System.Drawing.Point(380, 57);
             this.pBCPUScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBCPUScore.Name = "pBCPUScore";
             this.pBCPUScore.Size = new System.Drawing.Size(22, 26);
@@ -219,7 +219,7 @@ namespace Jokenpo
             // 
             this.lblCPU.BackColor = System.Drawing.Color.Transparent;
             this.lblCPU.Image = ((System.Drawing.Image)(resources.GetObject("lblCPU.Image")));
-            this.lblCPU.Location = new System.Drawing.Point(296, 54);
+            this.lblCPU.Location = new System.Drawing.Point(293, 54);
             this.lblCPU.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(76, 29);

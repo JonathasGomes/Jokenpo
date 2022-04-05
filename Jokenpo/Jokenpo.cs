@@ -154,9 +154,7 @@ namespace Jokenpo
             {
                 Victory victory = new Victory();
                 victory.ShowDialog();
-
-                countPlayer = 0;
-                countCPU = 0;
+                Reset();
 
                 pBCPUScore.Image = imageListScore.Images[countCPU];
             }
@@ -180,9 +178,8 @@ namespace Jokenpo
             {
                 GameOver gameover = new GameOver();
                 gameover.ShowDialog();
+                Reset();
 
-                countCPU = 0;
-                countPlayer = 0;
 
                 pBplayerScore.Image = imageListScore.Images[countPlayer];
             }
@@ -208,6 +205,15 @@ namespace Jokenpo
             //Som do empate do round
             SoundPlayer sound = new SoundPlayer(Properties.Resources.drawsound);
             sound.Play();
+        }
+
+        private void Reset()
+        {
+            countCPU = 0;
+            countPlayer = 0;
+            pBIA.Image = null;
+            pBJogador.Image = null;
+            pbResult.Image = null;
         }
     }
 }

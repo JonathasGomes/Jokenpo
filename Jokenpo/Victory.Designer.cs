@@ -39,7 +39,7 @@ namespace Jokenpo
             this.btnOK.BackColor = System.Drawing.Color.Transparent;
             this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOK.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.Image")));
-            this.btnOK.Location = new System.Drawing.Point(58, 83);
+            this.btnOK.Location = new System.Drawing.Point(58, 84);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(37, 23);
