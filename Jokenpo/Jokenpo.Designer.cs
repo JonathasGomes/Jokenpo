@@ -66,7 +66,7 @@ namespace Jokenpo
             this.Scissors.BackColor = System.Drawing.Color.Transparent;
             this.Scissors.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Scissors.Image = global::Jokenpo.Properties.Resources.button_scissors;
-            this.Scissors.Location = new System.Drawing.Point(264, 18);
+            this.Scissors.Location = new System.Drawing.Point(264, 20);
             this.Scissors.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Scissors.Name = "Scissors";
             this.Scissors.Size = new System.Drawing.Size(64, 64);
@@ -81,7 +81,7 @@ namespace Jokenpo
             this.Paper.BackColor = System.Drawing.Color.Transparent;
             this.Paper.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Paper.Image = global::Jokenpo.Properties.Resources.button_paper;
-            this.Paper.Location = new System.Drawing.Point(154, 18);
+            this.Paper.Location = new System.Drawing.Point(154, 20);
             this.Paper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Paper.Name = "Paper";
             this.Paper.Size = new System.Drawing.Size(64, 64);
@@ -96,7 +96,7 @@ namespace Jokenpo
             this.Rock.BackColor = System.Drawing.Color.Transparent;
             this.Rock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Rock.Image = global::Jokenpo.Properties.Resources.button_rock;
-            this.Rock.Location = new System.Drawing.Point(44, 18);
+            this.Rock.Location = new System.Drawing.Point(44, 20);
             this.Rock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Rock.Name = "Rock";
             this.Rock.Size = new System.Drawing.Size(64, 64);
@@ -158,7 +158,7 @@ namespace Jokenpo
             this.pBCPUScore.Location = new System.Drawing.Point(383, 57);
             this.pBCPUScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBCPUScore.Name = "pBCPUScore";
-            this.pBCPUScore.Size = new System.Drawing.Size(26, 26);
+            this.pBCPUScore.Size = new System.Drawing.Size(22, 26);
             this.pBCPUScore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pBCPUScore.TabIndex = 10;
             this.pBCPUScore.TabStop = false;
