@@ -143,6 +143,7 @@ namespace Jokenpo
             if (countPlayer < 6)
             {
                 countPlayer++;
+                pbResult.Location = new Point(189, 199);
                 pbResult.Image = Properties.Resources.win_fonte_jokenpo_;
 
                 //Som da vitória do round
@@ -168,6 +169,7 @@ namespace Jokenpo
             if (countCPU < 6)
             {
                 countCPU++;
+                pbResult.Location = new Point(175, 199);
                 pbResult.Image = Properties.Resources.lose_fonte_jokenpo_2;
 
                 //Som da derrota do round
@@ -200,6 +202,7 @@ namespace Jokenpo
 
         private void Draw()
         {
+            pbResult.Location = new Point(175, 199);
             pbResult.Image = Properties.Resources.draw_fonte_jokenpo;
 
             //Som do empate do round
