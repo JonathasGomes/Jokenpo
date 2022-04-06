@@ -12,6 +12,9 @@ Instalado Microsoft Visual Studio de preferencia a versão 2019<br>
 Instalado Desenvolvimento para desktop com .NET dentro do Visual Studio Installer
 
 <h2>📂 Instalação</h2>
+No Visual Studio aperte no botão "Clonar um Repositório"<br>
+Em "Local do repositório" coloque esse link https://github.com/JonathasGomes/Jokenpo.git
 <h2>📥 Download</h2>
+Se você só tem interesse em jogar baixe o jogo por aqui
 <h2>📜 Sobre o Jogo </h2>
 <h2>🕹 Como Jogar </h2>
