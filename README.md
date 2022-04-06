@@ -13,4 +13,5 @@ Instalado Desenvolvimento para desktop com .NET dentro do Visual Studio Installe
 
 <h2>📂 Instalação</h2>
 <h2>📥 Download</h2>
+<h2>📜 Sobre o Jogo </h2>
 <h2>🕹 Como Jogar </h2>
