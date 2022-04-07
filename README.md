@@ -7,10 +7,10 @@ All pixel arts were created by Rafael.
 ## ⚙️ Pre-requisites
 * Computer/Notebook with **Windows** as Operating System<br>
 * Installed **Microsoft Visual Studio**, preferably version 2019<br>
-* Instalado **Desenvolvimento para desktop com .NET** dentro do Visual Studio Installer
+* Installed  **.NET desktop development** within Visual Studio Installer
 
 ## 📂 installation
-No Visual Studio aperte no botão **Clonar um Repositório** e em **Local do repositório** coloque esse link
+In Visual Studio click on the **Clone a Repository** button and in **Repository Location** put this link
 ```github
   https://github.com/JonathasGomes/Jokenpo.git
 ```  
@@ -27,8 +27,8 @@ these shapes are **Rock** (a closed fist 👊🏾), **Paper** (a flat hand 🖐�
 * **✌🏾 If the gesture is the same, it's a draw ✌🏾**<br>
 
 ## 🕹 How to Play
-Now that you know about the game, you have to choose one of three options between **Rock**, **Paper** and **Scissors**
-
+Now that you know about the game, you have to choose one of three options between **Rock**, **Paper** and **Scissors**<br>
+Just press the button of your choice and the gesture will be done.
 
 
 <br>
