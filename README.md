@@ -32,5 +32,6 @@ Just press the button of your choice and the gesture will be done.
 
 
 <br>
-<img align="center" src="https://media.discordapp.net/attachments/396443279119482912/961345037894037534/Animacao.gif?width=454&height=468"/><br>
-Enter a disputed duel and try to defeat the CPU, whoever reaches 6 points first wins.
+<img align="center" src="https://media.discordapp.net/attachments/396443279119482912/961345037894037534/Animacao.gif?width=454&height=468"/>
+Enter a disputed duel and try to defeat the CPU, whoever reaches 6 points first wins.<br><br>
+<img align="center" src="https://media.discordapp.net/attachments/956982508292046949/961701716607270972/unknown.png?width=441&height=468"/>
