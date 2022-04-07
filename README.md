@@ -20,5 +20,15 @@ Se você só tem interesse em jogar baixe o jogo por aqui
 Rock Paper Scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand,
 these shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V). "Scissors" is identical to the two-fingered.
 
-
 ## 🕹 Como Jogar
+Agora que você já sabe sobre o jogo, você tem que escolher uma das três opções entre pedra papel e tesoura
+
+### Regras<br>
+* **👊🏾 Pedra ganha de Tesoura ✌🏾** <br>
+* **✌🏾 Tesoura ganha do Papel 🖐🏾**<br>
+* **🖐🏾 Papel ganha da Pedra ᲼᲼👊🏾**<br>
+* **✌🏾 Se o gesto for o mesmo é empate ✌🏾**<br>
+
+<br>
+<img align="center" src="https://media.discordapp.net/attachments/396443279119482912/961345037894037534/Animacao.gif?width=454&height=468"/><br>
+Entre em um duelo disputado e tente derrotar a CPU, quem chegar a 6 pontos primeiro vence.
