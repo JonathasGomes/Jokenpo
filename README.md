@@ -2,8 +2,13 @@
 
 This is a project made by [Jonathas](https://github.com/JonathasGomes) and [Rafael](https://github.com/RafaelFigueiredo1)<br>
 Jonathas is responsible for the operation of the application and Rafael is responsible for the design of the application.<br><br>
-All pixel arts were created by Rafael. 
 
+## 💻 Technologies
+This project was made using 
+* **Windows Forms .net Framework 4.7.2**
+* **Aseprite** 
+
+<br>All pixel arts were created by Rafael. 
 ## ⚙️ Pre-requisites
 * Computer/Notebook with **Windows** as Operating System<br>
 * Installed **Microsoft Visual Studio**, preferably version 2019<br>
