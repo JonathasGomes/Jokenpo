@@ -16,5 +16,9 @@ No Visual Studio aperte no botão **Clonar um Repositório** e em **Local do rep
 ```  
 ## 📥 Download
 Se você só tem interesse em jogar baixe o jogo por aqui
-## 📜 Sobre o Jogo 
+## 📜 Sobre o Jogo
+Rock Paper Scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand,
+these shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V). "Scissors" is identical to the two-fingered.
+
+
 ## 🕹 Como Jogar
