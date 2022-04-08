@@ -5,7 +5,7 @@ Jonathas is responsible for the operation of the application and Rafael is respo
 
 ## 💻 Technologies
 This project was made using 
-* **Windows Forms .net Framework 4.7.2**
+* **Windows Forms .NET Framework 4.7.2**
 * **Aseprite** 
 
 <br>All pixel arts were created by Rafael. 
@@ -14,13 +14,17 @@ This project was made using
 * Installed **Microsoft Visual Studio**, preferably version 2019<br>
 * Installed  **.NET desktop development** within Visual Studio Installer
 
-## 📂 installation
-In Visual Studio click on the **Clone a Repository** button and in **Repository Location** put this link
+## 📂 Installation
+In Visual Studio click on the button **Clone a Repository** and in **Repository Location** put this link
 ```github
   https://github.com/JonathasGomes/Jokenpo.git
 ```  
 ## 📥 Download
-If you are only interested in playing download the game here
+If you are only interested in playing, download the game here<br>
+### Version Windows O.S
+<!-- BEGIN LATEST DOWNLOAD BUTTON -->
+[![Download Jokenpo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download Jokenpo")](https://mega.nz/296228e7-dcdb-4420-9e9c-5c9436550dc3)
+<!-- END LATEST DOWNLOAD BUTTON -->
 ## 📜 About the Game
 Rock Paper Scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand,
 these shapes are **Rock** (a closed fist 👊🏾), **Paper** (a flat hand 🖐🏾), and **Scissors** (a fist with the index finger and middle finger extended, forming a V ✌🏾). 
