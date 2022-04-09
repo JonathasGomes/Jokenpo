@@ -23,7 +23,7 @@ In Visual Studio click on the button **Clone a Repository** and in **Repository 
 If you are only interested in playing, download the game here<br>
 ### Version Windows O.S
 <!-- BEGIN LATEST DOWNLOAD BUTTON -->
-[![Download Jokenpo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download Jokenpo")](drive.google.com/u/0/uc?id=1OSxeTx_4QgUpDsi7DXFwCKgVkRqqyP8y&export=download)
+[![Download Jokenpo](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download Jokenpo")](https://download1496.mediafire.com/ia99wbglye1g/dj2lvf6p3duxaie/Jokenpo_Teste.rar)
 <!-- END LATEST DOWNLOAD BUTTON -->
 ## 📜 About the Game
 Rock Paper Scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand,
