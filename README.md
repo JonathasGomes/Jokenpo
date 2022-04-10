@@ -15,7 +15,7 @@ This project was made using
 * Installed  **.NET desktop development** within Visual Studio Installer
 
 ## 📂 Installation
-In Visual Studio click on the button **Clone a Repository** and in **Repository Location** put this link
+In Visual Studio click on the **Clone a Repository** button and in **Repository Location** put this link
 ```github
   https://github.com/JonathasGomes/Jokenpo.git
 ```  
