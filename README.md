@@ -11,7 +11,7 @@ This project was made using
 <br>All pixel arts were created by Rafael. 
 ## ⚙️ Pre-requisites
 * Computer/Notebook with **Windows** as Operating System<br>
-* Installed **Microsoft Visual Studio**, preferably version 2019<br>
+* Installed **Microsoft Visual Studio**<br>
 * Installed  **.NET desktop development** within Visual Studio Installer
 
 ## 📂 Installation
