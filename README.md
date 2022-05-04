@@ -1,6 +1,6 @@
 # Jokenpo <img align="center" src="https://media.discordapp.net/attachments/956982508292046949/961024183867949066/button_scissors_1.png" width="55" height="50" /></h1>
 
-This is a project made by [Jonathas](https://github.com/JonathasGomes) and [Rafael](https://github.com/RafaelFigueiredo1)<br>
+This is a project made with ❤️ by [Jonathas](https://github.com/JonathasGomes) and [Rafael](https://github.com/RafaelFigueiredo1)<br>
 Jonathas is responsible for the operation of the application and Rafael is responsible for the design of the application.<br><br>
 
 ## 💻 Technologies
